@@ -23,6 +23,7 @@ header {
 
 h2 {
   font-size: 2.2rem;
+  font-weight: 800;
 }
 
 nav {
@@ -45,7 +46,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 nav ul li a:hover {
@@ -68,6 +69,11 @@ nav ul li a:hover {
 
 
 /*---------------- section 1 styling ---------------- */
+
+.sect-one-outer{
+  padding: 25px;
+}
+
 .section-1 {
   width: 98%;
   border-radius: 30px;
@@ -78,6 +84,7 @@ nav ul li a:hover {
   /* border: 1px solid black; */
   animation: carousel 20s ease-in-out infinite alternate;
 }
+
 
 
 @keyframes carousel {
@@ -478,7 +485,7 @@ nav ul li a:hover {
 /* ------------------------------------- section 3 styling ----------------- */
 .section-3 {
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px 40px;
   background: #fff;
 }
 
@@ -537,13 +544,14 @@ nav ul li a:hover {
 }
 
 .inner h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .drops-container {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -693,6 +701,10 @@ nav ul li a:hover {
   /* gap: 20px; */
   padding: 40px 0px;
 }
+.section-6-box1 > p{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
 
 .section-6-box1 .section-6-nested-box-title {
   font-size: 3rem;
@@ -792,7 +804,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 0px;
+  padding: 40px 15px;
 }
 
 .section-7-box1 {
@@ -824,7 +836,7 @@ nav ul li a:hover {
   height: 100%;
   text-align: center;
   opacity: 0;
-  animation: fadeInOut 12s infinite;
+  animation: fadeInOut 18s infinite;
 
 }
 
@@ -834,14 +846,19 @@ nav ul li a:hover {
   animation-delay: 0s;
 }
 
-/* Second image show after 2s */
+/* Second image show after 4s */
 .section-7-img-box2 {
   animation-delay: 4s;
 }
 
-/* Second image show after 2s */
+/* thrid image show after 8s */
 .section-7-img-box3 {
   animation-delay: 8s;
+}
+
+/* four image show after 12s */
+.section-7-img-box3 {
+  animation-delay: 12s;
 }
 
 
@@ -896,6 +913,15 @@ nav ul li a:hover {
   top: 240px;
   left: 525px;
 }
+
+
+#box4-text{
+position: absolute;
+  z-index: 10;
+  top: 170px;
+  left: 640px;
+}
+
 
 
 
@@ -1067,13 +1093,14 @@ footer {
 
   .footer-section-two .footer-section-two-box1,
   .footer-section-two .footer-section-two-box2 {
-    width: 100%;
+    width: 85%;
     border: none;
     padding: 15px;
   }
 
   .footer-section-two-box2 input {
-    width: 80%;
+    width: 100%;
+    border: none;
     font-size: 1.2rem;
   }
 
@@ -1109,6 +1136,9 @@ footer {
     height: 450px;
   }
 
+  .section-7-box2{
+    margin-top: 30px;
+  }
 
 
   .section-7-box2 p {
@@ -1131,6 +1161,10 @@ footer {
   /* ---------- section 6 ------------ */
   .section-6{
     padding: 10px;
+  }
+
+  .section-6-box1 > p{
+    font-size: 1.5rem;
   }
   .section-6-box1 .section-6-nested-box-title {
     font-size: 2.5rem;
@@ -1218,14 +1252,24 @@ footer {
   }
 
   .footer-section-three {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    text-align: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    /* align-items: center; */
+    justify-content: space-around;
+    /* text-align: center; */
+  }
+
+  .footer-section-three-box1{
+    margin-bottom: 10px;
+  }
+
+  .footer-section-three-box3{
+    order: 2;
   }
 
   .footer-section-three ul li {
-    font-size: 1rem;
+    font-size: .8rem;
     line-height: 30px;
   }
 
