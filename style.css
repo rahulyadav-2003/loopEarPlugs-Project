@@ -1,0 +1,1675 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Avenir", sans-serif;
+  font-weight: 500;
+}
+
+
+
+/* ---------------------- header styling------------------------------*/
+header {
+  padding: 20px;
+  /* box-shadow: 1px 1px 1px rgb(84, 83, 83); */
+}
+
+/* Base hamburger hidden */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 0px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.right {
+  display: flex;
+}
+
+.right p {
+  font-size: 1.5rem;
+  padding: 0px 10px;
+}
+
+
+
+/*-------------------------------- main styling -------------------   */
+
+
+
+/*---------------- section 1 styling ---------------- */
+.section-1 {
+  width: 98%;
+  border-radius: 30px;
+  margin: 10px auto;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid black; */
+  animation: carousel 20s ease-in-out infinite alternate;
+}
+
+
+@keyframes carousel {
+  0% {
+    background-image: url("/assest/section-1-bg-1.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  33.33% {
+    background-image: url("/assest/section-1-bg-2.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  66.66% {
+    background-image: url("/assest/section-1-bg-3.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  100% {
+    background-image: url("/assest/section-1-bg-4.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
+.earplug-images {
+  width: 40%;
+  height: 500px;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  animation: imageChange 20s ease-in-out infinite alternate;
+}
+
+@keyframes imageChange {
+  0% {
+    background-image: url("/assest/section-1-img-1.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  33.33% {
+    background-image: url("/assest/section-1-img-2.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  66.66% {
+    background-image: url("/assest/section-1-img-3.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  100% {
+    background-image: url("/assest/section-1-img-4.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+}
+
+.carousel-text {
+  position: absolute;
+  left: 60px;
+  top: 200px;
+  width: 50%;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  /* text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); */
+}
+
+.text {
+  position: absolute;
+  opacity: 0;
+  animation: textFade 20s ease-in-out infinite;
+  color: #fff;
+}
+
+/* Specific styling for t1 inner content */
+.text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111;
+
+}
+
+.text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #111;
+}
+
+.text.t2 h1,
+.text.t2 p,
+.text.t3 h1,
+.text.t3 p,
+.text.t4 h1,
+.text.t4 p {
+  color: #fff;
+}
+
+
+.text.t2 h1 {
+  font-size: 3rem;
+  transform: scaleY(1.5);
+}
+
+
+.text.t2 p {
+  font-size: 1.5rem;
+}
+
+
+.text.t3 h1 {
+  font-size: 5rem;
+  transform: scaleY(2);
+}
+
+
+.text.t3 p {
+  font-size: 1.5rem;
+}
+
+
+.text.t4 h1 {
+  font-size: 5rem;
+  transform: scaleY(2);
+}
+
+
+.text.t4 p {
+  font-size: 1.5rem;
+}
+
+
+.cta-btn {
+  padding: 12px 30px;
+  background-color: #111;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+
+/* Show each text at different intervals matching bg + image */
+.text.t1 {
+  animation-delay: 0s;
+}
+
+.text.t2 {
+  animation-delay: 5s;
+}
+
+.text.t3 {
+  animation-delay: 10s;
+}
+
+.text.t4 {
+  animation-delay: 15s;
+}
+
+@keyframes textFade {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* -------------------- section 2 ----------------- */
+.section-2 {
+  padding: 40px;
+}
+
+.section-2 h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.product-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: 2px solid salmon;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+
+/* product images  */
+
+.product-card-image1 {
+  background-image: url('./assest/section-2-image-1.webp');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
+  transition-delay: 1ms;
+}
+
+.product-card-image1:hover {
+  background-image: url('./assest/section-2-image-1\(a\).webp');
+}
+
+
+
+.product-card-image2 {
+  background-image: url('./assest/section-2-image-2.webp');
+  background-size: cover;
+  width: 90%;
+  height: 90%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
+  transition-delay: 1ms;
+}
+
+.product-card-image2:hover {
+  background-image: url('./assest/section-2-image-2\(a\).webp');
+}
+
+
+
+.product-card-image3 {
+  background-image: url('./assest/section-2-image-3.webp');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
+  transition-delay: 1ms;
+}
+
+.product-card-image3:hover {
+  background-image: url('./assest/section-2-image-3\(a\).webp');
+}
+
+
+
+
+.product-card-image4 {
+  background-image: url('./assest/section-2-image-4.webp');
+  background-size: cover;
+  width: 90%;
+  height: 90%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
+  transition-delay: 1ms;
+}
+
+.product-card-image4:hover {
+  background-image: url('./assest/section-2-image-4\(a\).webp');
+}
+
+
+
+
+.product-card-image5 {
+  background-image: url('./assest/section-2-image-1.webp');
+  background-size: cover;
+  width: 90%;
+  height: 90%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
+  transition-delay: 1ms;
+}
+
+.product-card-image5:hover {
+  background-image: url('./assest/section-2-image-1\(a\).webp');
+}
+
+
+
+.color-options {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.color {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.rating {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price span {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #333;
+}
+
+
+
+
+
+/* ------------------------------------- section 3 styling ----------------- */
+.section-3 {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.section-3 h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.featured-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.featured-box {
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Logo Text Styles */
+.rollingstone {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.wirecutter {
+  font-family: 'Times New Roman', serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.featured-box h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.featured-box p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+
+/* Latest Drops Section */
+.inner {
+  margin-top: 80px;
+  text-align: left;
+}
+
+.inner h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.drops-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.drop-card {
+  max-width: 500px;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.img-box img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: black;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.drop-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 15px 0 8px;
+}
+
+.drop-card p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.drop-card a {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+/* ----------------------------------------------- section 4 ---------------- */
+.section-4 {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 75%;
+  margin: 70px auto;
+  scroll-behavior: smooth;
+}
+
+.video-card {
+  flex: 0 0 auto;
+  width: 200px;
+  text-align: center;
+}
+
+.section-4::-webkit-scrollbar {
+  display: none;
+}
+
+.video-thumbnail {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-thumbnail video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  color: black;
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+  cursor: pointer;
+  border-bottom: 1px solid #111;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+
+/* ------------------------------ section 5 ------------------- */
+.section-5 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.section-5-icon {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  flex: 1 1 200px;
+}
+
+
+/* ------------------------------------- section 6 -------------------*/
+
+.section-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+  padding: 40px 0px;
+}
+
+.section-6-box1 .section-6-nested-box-title {
+  font-size: 3rem;
+}
+
+
+.section-6-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.section-6-inner-box {
+  margin-top: 50px;
+  height: 400px;
+  width: 1100px;
+  /* border: 2px solid red; */
+  border-radius: 25px;
+  display: flex;
+}
+
+
+
+.section-6-nested-box {
+  width: 50%;
+  /* border: 2px solid red; */
+  height: 100%;
+}
+
+.section-6-nested-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
+  justify-content: center;
+}
+
+
+.section-img-outer {
+  width: 90%;
+  height: 90%;
+}
+
+.section-img-outer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-6-nested-box p {
+  color: black;
+  margin-left: 50px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.section-6-nested-box .section-6-nested-box-title {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+
+.section-6-nested-box button {
+  margin-left: 50px;
+  background: #222;
+  /* black button */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.section-6-nested-box .badge {
+  background: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* -------------------------------- section 7 styling -------------------------  */
+.section-7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.section-7-box1 {
+  /* border: 2px solid red; */
+  color: black;
+}
+
+.section-7-box1 p {
+  font-size: 3.5rem;
+}
+
+.section-7-box2 {
+  width: 85%;
+  height: 550px;
+  border-radius: 20px;
+  margin-top: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* overflow: auto; */
+  flex-wrap: wrap;
+}
+
+/* Common style for each image box */
+.section-7-img-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInOut 12s infinite;
+
+}
+
+
+/* First image show first */
+.section-7-img-box1 {
+  animation-delay: 0s;
+}
+
+/* Second image show after 2s */
+.section-7-img-box2 {
+  animation-delay: 4s;
+}
+
+/* Second image show after 2s */
+.section-7-img-box3 {
+  animation-delay: 8s;
+}
+
+
+/* Animation keyframes */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.section-7-box2 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+
+.section-7-box2 p {
+  position: absolute;
+  z-index: 10;
+  top: 170px;
+  left: 525px;
+  color: white;
+  /* border: 2px solid red; */
+  font-size: 3rem;
+}
+
+
+
+.section-7-box2 span {
+  position: absolute;
+  z-index: 10;
+  top: 240px;
+  left: 525px;
+}
+
+
+
+
+
+
+
+/* --------------------- footer styling ------------------ */
+footer {
+  background-color: #252427;
+  color: white;
+  padding-top: 50px;
+}
+
+.footer-section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer-box3 video {
+  width: 100%;
+  height: 560px;
+  border-radius: 20px;
+}
+
+
+
+.footer-section-two {
+  display: flex;
+  margin-top: 60px;
+  border-top: 1px solid #D3D3D4;
+  border-bottom: 1px solid #D3D3D4;
+  align-items: center;
+  /* padding-top: 50px; */
+}
+
+.footer-section-two .footer-section-two-box1 {
+  width: 60%;
+  padding: 30px;
+}
+
+
+.footer-section-two .footer-section-two-box2 {
+  padding: 30px;
+  width: 40%;
+  border-left: 1px solid #D3D3D4;
+}
+
+.footer-section-two-box2 input {
+  /* padding: 8px 80px; */
+  width: 60%;
+  padding: 10px 5px;
+  background-color: transparent;
+  border-radius: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+.footer-section-three {
+  display: flex;
+  gap: 60px;
+  padding: 45px;
+}
+
+
+.footer-section-three ul li {
+  list-style: none;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: #D3D3D4;
+}
+
+
+.footer-section-three .small {
+  font-size: .7rem;
+  padding: 4px 5px;
+  border-radius: 2px;
+  background-color: white;
+  color: rgb(44, 110, 110);
+  margin-left: 10px;
+  /* display: inline-block; */
+}
+
+.footer-section-three p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+
+}
+
+
+.footer-section-three ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+
+.footer-section-four {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  padding: 30px;
+  border-top: 1px solid #D3D3D4;
+}
+
+.footer-section-four .footer-section-four-box1 ul {
+  display: flex;
+}
+
+
+
+.footer-section-four .footer-section-four-box1 ul li {
+  list-style: none;
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #D3D3D4;
+}
+
+
+
+/* ---------------- Responsive design ---------------- */
+
+/* Tablets (<=1024px) */
+@media (max-width: 1024px) {
+
+  /* ----------------------- navbar -----------  */
+  nav {
+    font-size: 1rem;
+  }
+
+  .box.center {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    color: black;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .right p {
+    font-size: 1.4rem;
+    padding: 0px 8px;
+  }
+
+
+  /* --------------- footer --------------  */
+  .footer-section-one {
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .footer-box3 video {
+    height: 420px;
+  }
+
+  .footer-section-two {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section-two .footer-section-two-box1,
+  .footer-section-two .footer-section-two-box2 {
+    width: 100%;
+    border: none;
+    padding: 15px;
+  }
+
+  .footer-section-two-box2 input {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .footer-section-three {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 20px;
+  }
+
+  .footer-section-three p {
+    font-size: 1.2rem;
+  }
+
+  .footer-section-four {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section-four .footer-section-four-box1 ul {
+    justify-content: center;
+  }
+
+  /* ---------- SECTION 7 ---------- */
+  .section-7-box1 p {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .section-7-box2 {
+    width: 90%;
+    height: 450px;
+  }
+
+
+
+  .section-7-box2 p {
+    font-size: 2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+  }
+
+  .section-7-box2 span {
+    font-size: 1.2rem !important;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 220px;
+    text-align: center;
+  }
+
+
+
+  /* ---------- section 6 ------------ */
+  .section-6{
+    padding: 10px;
+  }
+  .section-6-box1 .section-6-nested-box-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .section-6-inner-box {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .section-6-nested-box {
+    text-align: center;
+    align-items: center;
+  }
+
+  .section-6-nested-box p,
+  .section-6-nested-box button {
+    margin-left: 0;
+  }
+
+  .section-img-outer {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-img-outer img {
+    border-radius: 20px;
+  }
+
+
+
+  /* ------------------------ section 1  */
+
+
+
+}
+
+
+
+
+
+
+
+/* Large Mobiles (<=768px) */
+@media (max-width: 768px) {
+
+  /*--------------------------- navbar ------------- */
+  nav {
+    font-size: 1rem;
+  }
+
+  .box.center {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    color: black;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .right p {
+    font-size: 1.4rem;
+    padding: 0px 8px;
+  }
+
+  /* --------------------------footer ------------- */
+  .footer-box1 p {
+    font-size: 2.2rem !important;
+    text-align: center;
+  }
+
+  .footer-box2 p {
+    font-size: 1rem !important;
+  }
+
+  .footer-box3 video {
+    height: 300px;
+  }
+
+  .footer-section-three {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section-three ul li {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+
+  .footer-section-three .small {
+    font-size: 0.6rem;
+  }
+
+  .footer-section-four-box1 ul li {
+    margin-left: 12px;
+    font-size: 0.9rem;
+  }
+
+  /* ---------- SECTION 7 ---------- */
+  .section-7-box1 p {
+    font-size: 2rem;
+  }
+
+  .section-7-box2 {
+    width: 95%;
+    height: 350px;
+  }
+
+  .section-7-box2 p {
+    font-size: 1.8rem;
+    top: 120px;
+  }
+
+  .section-7-img-box {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .section-7-box2 span {
+    font-size: 1rem !important;
+    top: 190px;
+    width: 80%;
+    line-height: 1.4;
+  }
+
+
+  /* ------- section 6 --- */
+  .section-6{
+    padding: 10px;
+
+  }
+  .section-6-box1 .section-6-nested-box-title {
+    font-size: 2rem;
+  }
+
+  .section-6-inner-box {
+    width: 95%;
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  .section-6-nested-box .section-6-nested-box-title {
+    font-size: 2rem;
+  }
+
+  .section-6-nested-box p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .section-6-nested-box button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .section-6-nested-box .badge {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+
+  /* ----------- section 5 ----------- */
+  .section-5 {
+    font-size: 1.5rem;
+    gap: 20px;
+  }
+
+  .section-5-icon {
+    flex: 1 1 45%;
+    font-size: 1.3rem;
+  }
+
+  .section-5-box {
+    margin-bottom: 15px;
+  }
+
+
+
+  /* -------- section 2 -------- */
+
+  .section-2 h2 {
+    font-size: 1.5rem;
+  }
+
+
+
+
+  /* -------------------- section 1  ------------- */
+  .section-1 {
+    height: 470px;
+    border-radius: 15px;
+  }
+
+  .earplug-images {
+    width: 54%;
+    height: 215px;
+    left: 25%;
+    top: 15px;
+  }
+
+  .carousel-text {
+    left: 50px;
+    top: 240px;
+    width: 85%;
+    font-size: 1.3rem;
+  }
+
+  .text h1 {
+    font-size: 1.8rem;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+  }
+
+  .cta-btn {
+    padding: 6px 15px;
+    font-size: 0.75rem;
+  }
+
+  .text.t2 h1 {
+    font-size: 2rem;
+    transform: scaleY(1);
+  }
+
+
+  .text.t2 p {
+    font-size: 1rem;
+  }
+
+
+  .text.t3 h1 {
+    font-size: 3rem;
+    transform: scaleY(1);
+  }
+
+
+  .text.t3 p {
+    font-size: 1rem;
+  }
+
+
+  .text.t4 h1 {
+    font-size: 3rem;
+    transform: scaleY(1);
+  }
+
+
+  .text.t4 p {
+    font-size: 1rem;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small Mobiles (<=480px) */
+@media (max-width: 480px) {
+
+  /* ------------------- navbar ------------------ */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    font-size: 0.9rem;
+  }
+
+  .right p {
+    font-size: 1.2rem;
+    padding: 0px 6px;
+  }
+
+  .hamburger {
+    font-size: 1.5rem;
+  }
+
+  /* ---------------------- footer -------------- */
+  .footer-box1 p {
+    font-size: 1.8rem !important;
+  }
+
+  .footer-box2 p {
+    font-size: 0.9rem !important;
+  }
+
+  .footer-box3 video {
+    height: 220px;
+    border-radius: 10px;
+  }
+
+  .footer-section-two p {
+    font-size: 1.2rem;
+  }
+
+  .footer-section-two-box2 input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .footer-section-three {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .footer-section-three p {
+    font-size: 1.1rem;
+  }
+
+  .footer-section-three ul li {
+    font-size: 0.9rem;
+    line-height: 26px;
+  }
+
+  .footer-section-four {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .footer-section-four-box1 ul li {
+    font-size: 0.85rem;
+    margin-left: 8px;
+  }
+
+  .footer-section-four-box2 p {
+    font-size: 0.9rem;
+  }
+
+  /* ---------- SECTION 7 ---------- */
+  .section-7-box1 p {
+    font-size: 1.5rem;
+  }
+
+  .section-7-box2 {
+    width: 100%;
+    height: 250px;
+  }
+
+  .section-7-box2 p {
+    font-size: 1.2rem;
+    top: 90px;
+  }
+
+  .section-7-box2 span {
+    font-size: 0.9rem !important;
+    top: 150px;
+    width: 90%;
+    line-height: 1.3;
+  }
+
+
+  /* ----------- section 6 ------------- */
+  .section-6 {
+    padding: 30px 0;
+  }
+
+  .section-6-box1 .section-6-nested-box-title {
+    font-size: 1.6rem;
+  }
+
+  .section-6-inner-box {
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    /* ✅ flex wrap only on small mobiles */
+    justify-content: center;
+    height: auto;
+  }
+
+  .section-6-nested-box {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .section-6-nested-box .section-6-nested-box-title {
+    font-size: 1.5rem;
+  }
+
+  .section-6-nested-box p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .section-6-nested-box button {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+
+  .section-6-nested-box .badge {
+    font-size: 0.75rem;
+    margin-bottom: 12px;
+  }
+
+  .section-img-outer {
+    width: 80%;
+  }
+
+  .section-img-outer img {
+    border-radius: 12px;
+  }
+
+
+  /* ------------------- section 5 --------------- */
+  .section-5 {
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  .section-5-icon {
+    flex: 1 1 100%;
+    /* full width per row */
+    font-size: 1.1rem;
+  }
+
+
+
+  /* -------------  section 1 ------------- */
+  .section-1 {
+    height: 470px;
+    border-radius: 15px;
+  }
+
+  .earplug-images {
+    width: 54%;
+    height: 215px;
+    left: 25%;
+    top: 15px;
+  }
+
+  .carousel-text {
+    left: 50px;
+    top: 225px;
+    width: 85%;
+    font-size: 1.3rem;
+  }
+
+  .text h1 {
+    font-size: 1.8rem;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+  }
+
+  .cta-btn {
+    padding: 6px 15px;
+    font-size: 0.75rem;
+  }
+
+  .text.t2 h1 {
+    font-size: 2rem;
+    transform: scaleY(1);
+  }
+
+
+  .text.t2 p {
+    font-size: 1rem;
+  }
+
+
+  .text.t3 h1 {
+    font-size: 3rem;
+    transform: scaleY(1);
+  }
+
+
+  .text.t3 p {
+    font-size: 1rem;
+  }
+
+
+  .text.t4 h1 {
+    font-size: 3rem;
+    transform: scaleY(1);
+  }
+
+
+  .text.t4 p {
+    font-size: 1rem;
+  }
+
+
+
+}
+
+
+
+
+
+/* working  */
+
+/* @media (max-width: 992px) {
+   .footer-section-three{
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+   }
+   .footer-box3{
+    display: flex;
+    justify-content: center;
+   }
+   .footer-box3 video{
+    width: 80%;
+   }
+
+
+   .footer-section-four{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+   }
+   .footer-section-four-box1{
+    order: 2;
+   }
+   
+} */
