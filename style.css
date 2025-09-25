@@ -1413,7 +1413,7 @@ footer {
 
   .carousel-text {
     left: 50px;
-    top: 240px;
+    top: 225px;
     width: 85%;
     font-size: 1.3rem;
   }
@@ -1443,7 +1443,7 @@ footer {
 
 
   .text.t3 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     transform: scaleY(1);
   }
 
@@ -1454,7 +1454,7 @@ footer {
 
 
   .text.t4 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     transform: scaleY(1);
   }
 
@@ -1661,7 +1661,7 @@ footer {
   .carousel-text {
     left: 50px;
     top: 225px;
-    width: 85%;
+    width: 82%;
     font-size: 1.3rem;
   }
 
